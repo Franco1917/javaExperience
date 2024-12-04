@@ -4,8 +4,7 @@ import './CentralHub.css';
 const CentralHub: React.FC = () => {
     const handleAttractionClick = (attraction: string) => {
         alert(`¡Explorando la atracción: ${attraction}!`);
-        // Aquí puedes redirigir a páginas específicas de atracciones usando React Router.
-        // Por ejemplo: window.location.href = `/attraction/${attraction}`;
+
     };
 
     return (
@@ -21,24 +20,27 @@ const CentralHub: React.FC = () => {
             <main className="central-map">
                 <h2>Selecciona una atracción:</h2>
                 <div className="map-area">
-                    {/* Puntos interactivos del mapa */}
+                    {/* Fondo del mapa */}
+                    <img src="/src/assets/park2.png" alt="Mapa del Parque" className="map-background" />
+
+                    {/* Puntos interactivos sobre el mapa */}
                     <button
                         className="map-point"
-                        style={{ top: '40%', left: '30%' }}
+                        style={{ top: '20%', left: '30%' }}
                         onClick={() => handleAttractionClick('Ciclo For')}
                     >
                         Ciclo For
                     </button>
                     <button
                         className="map-point"
-                        style={{ top: '60%', left: '50%' }}
+                        style={{ top: '40%', left: '50%' }}
                         onClick={() => handleAttractionClick('Ciclo While')}
                     >
                         Ciclo While
                     </button>
                     <button
                         className="map-point"
-                        style={{ top: '70%', left: '70%' }}
+                        style={{ top: '60%', left: '70%' }}
                         onClick={() => handleAttractionClick('Clases y Objetos')}
                     >
                         Clases y Objetos
