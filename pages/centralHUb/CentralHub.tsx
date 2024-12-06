@@ -27,7 +27,7 @@ const CentralHub: React.FC = () => {
                     <button
                         className="map-point"
                         style={{ top: '20%', left: '30%' }}
-                        onClick={() => handleAttractionClick('Ciclo For')}
+                        onClick={() =>  window.location.href = '/for-cycle'}
                     >
                         Ciclo For
                     </button>
